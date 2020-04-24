@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    //With orientation set to "vertical", the layout now stacks
+    //all the components (items) on top of each other
+
+
+
+    //This second LinearLayout is for handling the top header, which
+    //consists of the three buttons and the edit text input
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        //With gravity set to "center", all the items inside are aligned
+        //horizontally equal in the center
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            />
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            />
+
+        <Button
+            android:id="@+id/remove_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical"
+            android:text="Remove"
+            />
+    </LinearLayout>
+
+    //Input field
+    <EditText
+        android:id="@+id/text_editor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    //This is where the list of countries will be shown
+    <ListView
+        android:id="@+id/country_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
